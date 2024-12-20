@@ -1,0 +1,41 @@
+.todo {
+  width: 30rem;
+  word-break: break-all;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+
+  &_item {
+    display: flex;
+    align-items: center;
+    span {
+      width: 25rem;
+    }
+  }
+
+  &_deleteBtn {
+    display: none;
+    border: none;
+  }
+
+  &_deleteIcon {
+    border-radius: 10px;
+    border: 2px solid aqua;
+    padding: 4px;
+    transition: 0.3s;
+    &:hover {
+      border-color: red;
+      color: red;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .todo_deleteBtn {
+      display: block;
+    }
+  }
+}
